@@ -154,7 +154,11 @@
     );
 
     $("#menu").click(function () {
-        $('#side_main_menu').show("slide", { direction: "left" }, 1000);
+        if($('#side_main_menu').css("margin-left") == "-282px") {
+            $('#side_main_menu').animate({"margin-left": '0px'});
+        } else {
+            $('#side_main_menu').animate({"margin-left": '-282px'});
+        }
     });
 
     var map;

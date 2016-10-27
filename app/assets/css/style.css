@@ -90,6 +90,11 @@ body {
     left: 6%;
     z-index: 999;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,.06),0 2px 5px 0 rgba(0,0,0,.2);
+
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-animation: app-enter .3s cubic-bezier(.1,.82,.25,1);
+    animation: app-enter .3s cubic-bezier(.1,.82,.25,1);
 }
 
 /*#menu {*/
@@ -220,9 +225,16 @@ nav ul a:hover {
     display: block;
     background: #ffffff;
     z-index: 999;
+    margin-left: -282px;
     animation: closeSecondBgRed .8s cubic-bezier(0.4, 0.61, 0.355, 1) forwards;
     box-shadow: 0 2px 1px 0 rgba(0,0,0,.06),0 2px 5px 0 rgba(0,0,0,.2);
-    box-shadow: 0 8px 15px rgba(158,61,0,0.15),0 0 14px rgba(158,61,0,0.1),0 0 1px rgba(0,0,0,0.1);
+
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
 .shadow {
