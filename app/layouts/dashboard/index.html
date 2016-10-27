@@ -18,30 +18,19 @@
 
 <style>
     #dropdown1 {
-        width: 299px! important;
+        width: 299px ! important;
     }
+
     #dropdown1 a {
         color: #006599;
     }
+
     .dropdown-button {
         cursor: pointer;
+        font-weight: 300;
     }
 </style>
 
-<script>
-
-    $('.dropdown-button').dropdown({
-                inDuration: 300,
-                outDuration: 225,
-                constrain_width: true, // Does not change width of dropdown to that of the activator
-                hover: true, // Activate on hover
-                gutter: 0, // Spacing from edge
-                belowOrigin: true, // Displays dropdown below the button
-                alignment: 'left' // Displays dropdown with edge aligned to the left of button
-            }
-    );
-
-</script>
 
 <div id="layer_holder">
     <div id="map_layer">
@@ -51,31 +40,44 @@
                     <div class="con-color">
                         <nav class="con-color">
                             <div class="nav-wrapper">
-                                <a href="#" class="brand-logo"></a>
-                                <span>
-                                    <div style="display: inline-block;padding: 0 22px;">
+                                <span class="left" style="display: flex;">
+                                    <div style="display: inline-block;padding: 0 22px;padding-right: 8px;">
+                                        <i id="menu" class="material-icons" style="cursor: pointer">menu</i>
+                                    </div>
+                                </span>
+
+                                <span class="left">
+                                    <div style="display: inline-block;padding: 0 12px;">
                                         <!-- Dropdown Trigger -->
                                         <a class='dropdown-button' data-activates='dropdown1'>
                                             Owokoniran Family <i class="material-icons right">arrow_drop_down</i>
                                         </a>
 
                                         <!-- Dropdown Structure -->
-                                        <ul id='dropdown1' class='dropdown-content' >
+                                        <ul id='dropdown1' class='dropdown-content'>
                                             <li><a href="#!">Inits Limited</a></li>
                                             <li><a href="#!">Friends Circle</a></li>
                                             <li class="divider"></li>
-                                            <li><a href="#!"> <i class="material-icons left">account_circle</i> Enter Invitation Code </a></li>
-                                            <li><a href="#!"> <i class="material-icons left">supervisor_account</i> Create a New Circle </a></li>
+                                            <li><a href="#!"> <i class="material-icons left">person_add</i> Enter Invitation Code </a></li>
+                                            <li><a href="#!"> <i class="material-icons left">account_circle </i> Create a New Circle </a></li>
                                         </ul>
                                     </div>
                                 </span>
-                                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                                    <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
-                                    <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+
+                                <ul id="nav-mobile" class="right">
+                                    <li><a href="#"><i class="material-icons">more_vert</i></a></li>
                                 </ul>
+                                <div style="clear: both"></div>
                             </div>
                         </nav>
                     </div>
+
+                    <div id="side_main_menu">
+                        <div>
+
+                        </div>
+                    </div>
+
                     <div>
                         <div>
                             <div class="col s12">
@@ -108,9 +110,15 @@
                                                             </div>
                                                             <div class="col s2">
                                                                 <p style="line-height: 15px;">
-                                                                    <img style="padding-left: 9px;" src="../../assets/img/battery.png" class="img-responsive"/>
-                                                                    <img style="padding-left: 9px;" src="../../assets/img/battery.png" class="img-responsive"/>
-                                                                    <img style="padding-left: 9px;" src="../../assets/img/battery.png" class="img-responsive"/>
+                                                                    <img style="padding-left: 9px;width: 29px! important;"
+                                                                         src="../../assets/img/battery.png"
+                                                                         class="img-responsive"/>
+                                                                    <img style="padding-left: 9px;width: 29px! important;"
+                                                                         src="../../assets/img/battery.png"
+                                                                         class="img-responsive"/>
+                                                                    <img style="padding-left: 9px;width: 29px! important;"
+                                                                         src="../../assets/img/battery.png"
+                                                                         class="img-responsive"/>
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -134,6 +142,20 @@
 
 <script>
     $('#tabs').tabs();
+    $('.dropdown-button').dropdown({
+                inDuration: 300,
+                outDuration: 225,
+                constrain_width: true, // Does not change width of dropdown to that of the activator
+                hover: true, // Activate on hover
+                gutter: 0, // Spacing from edge
+                belowOrigin: true, // Displays dropdown below the button
+                alignment: 'left' // Displays dropdown with edge aligned to the left of button
+            }
+    );
+
+    $("#menu").click(function () {
+        $('#side_main_menu').show("slide", { direction: "left" }, 1000);
+    });
 
     var map;
     function initMap() {

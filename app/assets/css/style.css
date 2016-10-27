@@ -39,11 +39,6 @@ body {
     padding: 5px 17px;
 }
 
-#menu:hover {
-    width: 320px;
-    box-shadow: 0 8px 15px rgba(158,61,0,0.15),0 0 14px rgba(158,61,0,0.1),0 0 1px rgba(0,0,0,0.1);
-}
-
 .animated {
     -webkit-backface-visibility: hidden;
     -webkit-transform: translate3d(0,0,0);
@@ -97,17 +92,16 @@ body {
     box-shadow: 0 1px 1px 0 rgba(0,0,0,.06),0 2px 5px 0 rgba(0,0,0,.2);
 }
 
-#menu {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    z-index: 999;
-    left: 0;
-    width: 58px;
-    height: 100%;
-    background: #ddd;
-    animation: closeSecondBgRed .8s cubic-bezier(0.4, 0.61, 0.355, 1) forwards;
-}
+/*#menu {*/
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*z-index: 999;*/
+    /*left: 0;*/
+    /*width: 58px;*/
+    /*height: 100%;*/
+    /*background: #ddd;*/
+/*}*/
 
 #side_main {
     position: absolute;
@@ -218,3 +212,19 @@ nav ul a:hover {
     color: #FFFFFF;
 }
 
+#side_main_menu {
+    width: 282px;
+    position: absolute;
+    bottom: 0;
+    top: 64px;
+    display: block;
+    background: #ffffff;
+    z-index: 999;
+    animation: closeSecondBgRed .8s cubic-bezier(0.4, 0.61, 0.355, 1) forwards;
+    box-shadow: 0 2px 1px 0 rgba(0,0,0,.06),0 2px 5px 0 rgba(0,0,0,.2);
+    box-shadow: 0 8px 15px rgba(158,61,0,0.15),0 0 14px rgba(158,61,0,0.1),0 0 1px rgba(0,0,0,0.1);
+}
+
+.shadow {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2),0 -1px 0px rgba(0,0,0,0.02);
+}
