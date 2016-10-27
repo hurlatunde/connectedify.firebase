@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <meta name="description" content="Your awesome app description">
+    <meta name="keywords" content="Your awesome app keywords">
+    <meta name="author" content="app author">
+
+    <title> Connectedify </title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="stylesheet" href="assets/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- SwallowJs mainly uses firebase as its data source  -->
+    <!-- moreInfo:- https://firebase.google.com/docs/web/setup  -->
+    <script src="component/js/plugins/Firebase/firebase.js"></script>
+    <!-- The above Firebase script *must* come first before jQuery & SwallowJs/boot -->
+
+    <!-- jQuery (necessary for swallow's JavaScrip) -->
+    <script src="component/js/plugins/jquery-2.2.2.min.js"></script>
+    <!-- boot.js needed for swallow to work(**** do not remove! ****) -->
+    <script src="component/js/boot.js"></script>
+
+    <script src="assets/js/materialize.min.js"></script>
+
+</head>
+<body>
+
+<!-- main system container -->
+<!-- Where all swallow routing take place -->
+<div id="swallow"></div>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+
+body {
+    padding-top: 50px;
+}
+
+.starter-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
+}
+
+.nav-tabs {
+    border-bottom: 0px solid #ddd;
+    border-radius: 4px;
+    background: #ddd;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.nav-tabs>li>a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 10px 15px;
+}
+
+.nav-tabs-main>li>a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 0px solid transparent! important;
+    border-radius: 4px! important;
+    padding: 5px 17px;
+}
+
+#menu:hover {
+    width: 320px;
+    box-shadow: 0 8px 15px rgba(158,61,0,0.15),0 0 14px rgba(158,61,0,0.1),0 0 1px rgba(0,0,0,0.1);
+}
+
+.animated {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+
+#map {
+    width: 72%;
+    height: 100%;
+    position: absolute! important;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 28%;
+    background: #FFFFFF
+;
+    float: left;
+}
+
+#map_layer {
+    float: left;
+    position: absolute;
+    width: 28%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #ffffff;
+    border-radius: 0px;
+    display: inline-block;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    z-index: 1;
+    -webkit-overflow-scrolling: touch;
+    overflow: hidden;
+}
+
+#layer_holder {
+    position: fixed ! important;
+    top: 27px;
+    bottom: 6%;
+    right: 6%;
+    left: 6%;
+    z-index: 999;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.06),0 2px 5px 0 rgba(0,0,0,.2);
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    left: 0;
+    width: 58px;
+    height: 100%;
+    background: #ddd;
+    animation: closeSecondBgRed .8s cubic-bezier(0.4, 0.61, 0.355, 1) forwards;
+}
+
+#side_main {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding-left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+}
+
+#map_layer_holder {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+nav .brand-logo {
+    margin-left: 12px;
+}
+
+.tabs .tab a {
+    color: #ffffff;
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    height: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: color .28s ease;
+}
+
+.tabs .indicator {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: #ffffff;
+    will-change: left, right;
+}
+
+.con-color {
+    background-color: #006599! important;
+}
+
+#members .card-panel {
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.16), 0 0px 0px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 0px;
+}
+#members .members-pill {
+    border-bottom: 1px solid #F1F1F1;
+}
+#members .members-pill:last-child {
+    border-bottom: 0px solid #F1F1F1;
+}
+
+#style_holder {
+    overflow: hidden;
+    height: 100%;
+    overflow-y: scroll;
+    width: 100%;
+    position: absolute;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-button {
+    height: 0;
+    width: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.1);
+    background-clip: border-box;
+    border: solid transparent;
+    border-width: 1.1px 1.1px 1.1px 6px;
+    min-height: 28px;
+    padding: 0 0 0;
+    -webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,0.1),inset 0 -1px 0 rgba(0,0,0,0.07);
+    box-shadow: inset 1px 1px 0 rgba(0,0,0,0.1),inset 0 -1px 0 rgba(0,0,0,0.07);
+}
+
+small {
+    font-size: 75%;
+    line-height: 24px;
+    display: block;
+}
+
+.img-responsive {
+    width: 100%! important;
+}
+
+.material-icons {
+    font-size: 24px ! important;
+}
+
+nav ul a:hover {
+    background-color: #006599;
+}
+
+#dropdown1 a:hover {
+    color: #FFFFFF;
+}
+
